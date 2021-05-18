@@ -1,0 +1,168 @@
+/* Styling applying to 1024px and smaller, barring what is mentioned specifically in the responsive to 
+mobile screens section */
+
+header{
+    grid-area: header;
+    background-color: teal;
+    text-align: center;
+    text-decoration-color: white;
+    font-size: 120%;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 1fr 5fr 1fr;
+    grid-template-columns: 1fr 10fr 1fr;
+    grid-template-areas: 
+      "header header header"
+      "aside main aside1"
+      "aside footer aside1";
+    grid-gap: 0;
+    height: 100%;
+}
+
+main{
+    grid-area: main;
+    background-color: lightblue;
+    height: 100%;
+}
+
+img { 
+    width: auto;
+    }
+
+.headingbox {
+    padding: 1% 1% 1% 5%;
+    font-size: 100%;
+  }
+
+.card {
+    /* Added shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 100%;
+    height: fit-content;
+  }
+
+.cardbody {
+  border: .05px solid white;
+  border-radius: 5px 5px 0 0;
+  border-collapse: collapse;
+  width: fit-content;
+  height: fit-content;
+  padding: 5% 10%;
+  text-align: center;
+}
+
+
+/* On hover add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+
+
+.aside{  /* Created to centre the content viewpoint for the user */
+    grid-area: aside;
+    background-color: orange;
+}
+
+.aside1{ /* Created to centre the content viewpoint for the user */
+    grid-area: aside1;
+    background-color: red;
+}
+
+footer{ /* Useful to have for layout, but also a client might want to utilise it, so best to have it there 
+  just in case */
+    grid-area: footer;
+    background-color: lightgreen;
+    height: 100%;
+}
+
+
+
+/* Float columns side by side */
+.column1 {
+  float: left;
+  padding: 2%;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 5%;
+}
+
+/* float after the columns */
+.row:after {
+  padding: 2%;
+}
+
+/* Responsive columns 70rem max */
+@media screen and (max-width: 70rem) {
+.container {
+    display: grid;
+    grid-template-rows: .8fr 5fr .8fr;
+    grid-template-columns: .8fr 10fr .8fr;
+    grid-template-areas: 
+      "header header header"
+      "aside main aside1"
+      "aside footer aside1";
+    grid-gap: 0;
+    height: 100%;
+}
+.main
+    {
+    height: 100%;
+    }
+
+}
+
+
+/* Responsive columns 50rem max */
+@media screen and (max-width: 50rem) {
+
+  header{
+    grid-area: header;
+    background-color: teal;
+    text-align: center;
+    text-decoration-color: white;
+    font-size: 100%; /* This seemed sufficient for smaller screens, rather than the original 120% */
+}
+
+    .container {
+      display: grid;
+      grid-template-rows: .1fr 2fr .1fr;
+      grid-template-columns: .1fr 1fr .1fr;
+      grid-template-areas: 
+        "header header header"
+        "aside main aside1"
+        "footer footer footer";
+      grid-gap: 0;
+  }
+
+
+  .row {
+    display: grid;
+    grid-template-columns: 1fr;
+
+  }
+
+  img { 
+    width: auto;
+    height: auto;
+    }
+
+    .cardbody {
+        border: .05px solid white;
+        border-radius: 5px 5px 0 0;
+        border-collapse: collapse;
+        width: 90%;
+        height: 90%;
+        padding: 5%;
+        text-align: center;
+      }
+
+}

@@ -23,7 +23,11 @@ header{
     height: 100%;
 }
 
-main{
+h1, h2, h3, h4 {
+  text-align: center;
+}
+
+main {
     grid-area: main;
     background-color: lightblue;
     height: 100%;
@@ -51,10 +55,20 @@ img {
   border-radius: 5px 5px 0 0;
   border-collapse: collapse;
   width: fit-content;
+  padding: 5% 10%;
+  text-align: center;
+}
+
+.introCard {
+  border: .05px solid white;
+  border-radius: 5px 5px 0 0;
+  border-collapse: collapse;
+  height: fit-content;
   height: fit-content;
   padding: 5% 10%;
   text-align: center;
 }
+
 
 
 /* On hover add a deeper shadow */
@@ -92,11 +106,22 @@ footer{ /* Useful to have for layout, but also a client might want to utilise it
 .row {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding: 5%;
+  padding: 3%;
 }
 
 /* float after the columns */
 .row:after {
+  padding: 2%;
+}
+
+
+.row2 {
+  display: grid;
+  padding-top, padding-bottom: 3%;
+}
+
+/* float after the columns */
+.row2:after {
   padding: 2%;
 }
 
@@ -118,6 +143,11 @@ footer{ /* Useful to have for layout, but also a client might want to utilise it
     height: 100%;
     }
 
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 
@@ -147,7 +177,6 @@ footer{ /* Useful to have for layout, but also a client might want to utilise it
   .row {
     display: grid;
     grid-template-columns: 1fr;
-
   }
 
   img { 
@@ -156,6 +185,16 @@ footer{ /* Useful to have for layout, but also a client might want to utilise it
     }
 
     .cardbody {
+        border: .05px solid white;
+        border-radius: 5px 5px 0 0;
+        border-collapse: collapse;
+        width: 90%;
+        height: 90%;
+        padding: 5%;
+        text-align: center;
+      }
+
+      .introCard {
         border: .05px solid white;
         border-radius: 5px 5px 0 0;
         border-collapse: collapse;

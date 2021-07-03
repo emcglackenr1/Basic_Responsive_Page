@@ -3,9 +3,9 @@ mobile screens section */
 
 header{
     grid-area: header;
-    background-color: teal;
+    background: rgb(101,98,98);
+    background: radial-gradient(circle, rgba(101,98,98,1) 53%, rgba(54,53,53,1) 88%); 
     text-align: center;
-    text-decoration-color: white;
     font-size: 120%;
     width: 100%;
     height: 100%;
@@ -28,8 +28,9 @@ h1, h2, h3, h4 {
 }
 
 main {
-    grid-area: main;
-    background-color: lightblue;
+    grid-area: main;    
+    background: rgb(63,94,251);
+    background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
     height: 100%;
 }
 
@@ -50,8 +51,25 @@ img {
     height: fit-content;
   }
 
+  .card:nth-child(2n) {
+        /* Added shadows to create the "card" effect */
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        width: 100%;
+        height: fit-content;
+    background-color: FFB708;
+}
+
+.card:nth-child(4n) {
+      /* Added shadows to create the "card" effect */
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      transition: 0.3s;
+      width: 100%;
+      height: fit-content;
+  background-color: 5C2751;
+}
+
 .cardbody {
-  border: .05px solid white;
   border-radius: 5px 5px 0 0;
   border-collapse: collapse;
   width: fit-content;
@@ -80,12 +98,12 @@ img {
 
 .aside{  /* Created to centre the content viewpoint for the user */
     grid-area: aside;
-    background-color: orange;
+    background-color: 353535;
 }
 
 .aside1{ /* Created to centre the content viewpoint for the user */
     grid-area: aside1;
-    background-color: red;
+    background-color: 353535;
 }
 
 footer{ /* Useful to have for layout, but also a client might want to utilise it, so best to have it there 
@@ -156,9 +174,7 @@ footer{ /* Useful to have for layout, but also a client might want to utilise it
 
   header{
     grid-area: header;
-    background-color: teal;
     text-align: center;
-    text-decoration-color: white;
     font-size: 100%; /* This seemed sufficient for smaller screens, rather than the original 120% */
 }
 

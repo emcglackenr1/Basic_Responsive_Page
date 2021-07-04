@@ -33,17 +33,19 @@ The design was created during pride month, so the colour scheme was inspired by 
  
  <p align="center">
   <img src="https://user-images.githubusercontent.com/64873698/124394738-a600c300-dcf8-11eb-9d66-da6a1b99d2a1.JPG" width="300"  alt="Full Screen Content Layout">
-</p>
+  For this layout the four 'cards' are in a single row. These could demonstrate links to four sections of the website, or could be previews for blog content such as article blurbs.
 
 
  <h2>Tablet/Smaller Screen</h2>
 <p align="center">
   <img src="https://user-images.githubusercontent.com/64873698/124394745-ad27d100-dcf8-11eb-8eb9-a5c2232b679c.JPG"
        width="300"  alt="Tablet/Smaller Screen Layout">
+ For a smaller screen the layout has changed from one row of four cards to two rows of two cards. This maintains the readability and usability across different devices.
 </p>
 
 <h2>Mobile</h2>
 <p align="center">
   <img src="https://user-images.githubusercontent.com/64873698/124394742-aa2ce080-dcf8-11eb-8bda-912797076f91.JPG"
        width="300"  alt="Tablet/Smaller Screen Layout">
+ In this final version the cards are turned into a single column which the user can scroll up and down to view the content. This allows the same number of words and cards to be displayed without sacrificing usability and readability. 
 </p>

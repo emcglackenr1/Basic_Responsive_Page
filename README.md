@@ -16,9 +16,9 @@ The design was created during pride month, so the colour scheme was inspired by 
   <img src="https://user-images.githubusercontent.com/64873698/124370146-f41bb500-dc6b-11eb-9c61-298172ba70e5.JPG" width="350" title="Colour Scheme" alt="Colour Scheme">
 </p>
  
+<br>
 
-
-Full screen 
+ <h2> Full screen Version: </h2>
 
  
 <p align="center">
@@ -28,22 +28,23 @@ Full screen
  
  <br>
  
+ <h2> Card layout on full screen </h2>
+ 
  <p align="center">
   <img src="https://user-images.githubusercontent.com/64873698/124394738-a600c300-dcf8-11eb-9d66-da6a1b99d2a1.JPG"
 
        width="350" title="Full Screen 2" alt="Full Screen Version 2">
 </p>
 
-![Tablet2](https://user-images.githubusercontent.com/64873698/124394745-ad27d100-dcf8-11eb-8eb9-a5c2232b679c.JPG)
- 
-Tablet/Smaller Laptop
+
+ <h2>Tablet/Smaller Laptop</h2>
 <p align="center">
   <img src="https://user-images.githubusercontent.com/64873698/124394745-ad27d100-dcf8-11eb-8eb9-a5c2232b679c.JPG"
        
        width="350" title="Tablet Version" alt="Tablet Version Preview">
 </p>
 
-Mobile
+<h2>Mobile</h2>
 <p align="center">
   <img src="https://user-images.githubusercontent.com/64873698/124394742-aa2ce080-dcf8-11eb-8bda-912797076f91.JPG"
        width="350" title="Mobile Version" alt="Mobile Version Preview">

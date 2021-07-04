@@ -1,3 +1,7 @@
+![Tablet](https://user-images.githubusercontent.com/64873698/124370142-e36b3f00-dc6b-11eb-96fc-b854319234d1.JPG)
+![Colour_P](https://user-images.githubusercontent.com/64873698/124370146-f41bb500-dc6b-11eb-9c61-298172ba70e5.JPG)
+![Desktop](https://user-images.githubusercontent.com/64873698/124370147-f4b44b80-dc6b-11eb-9729-149e123cdc9b.JPG)
+![Mobile](https://user-images.githubusercontent.com/64873698/124370149-f67e0f00-dc6b-11eb-8d54-39c020112789.JPG)
 <h1>Basic_Responsive_Page</h1>
 <h3>
 A demonstration of a responsive web page template built from scratch, using only CSS and HTML. 

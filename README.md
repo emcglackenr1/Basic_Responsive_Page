@@ -15,6 +15,12 @@ The design was created during pride month, so the colour scheme was inspired by 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/64873698/124370146-f41bb500-dc6b-11eb-9c61-298172ba70e5.JPG" width="350" title="Colour Scheme" alt="Colour Scheme">
 </p>
+ 
+ 
+ ![Desktop1](https://user-images.githubusercontent.com/64873698/124394734-a13c0f00-dcf8-11eb-8aaa-11bfce659d92.JPG)
+![Desktop2](https://user-images.githubusercontent.com/64873698/124394738-a600c300-dcf8-11eb-9d66-da6a1b99d2a1.JPG)
+
+
 
 
 Full screen 
@@ -26,14 +32,14 @@ Full screen
 </p>
  
  <p align="center">
-  <img src=![Desktop1](https://user-images.githubusercontent.com/64873698/124394710-88cbf480-dcf8-11eb-91c0-f3821108079e.JPG)
-![Desktop2](https://user-images.githubusercontent.com/64873698/124394711-89648b00-dcf8-11eb-9a01-dfa66ddb78bb.JPG)
-![Mobile1](https://user-images.githubusercontent.com/64873698/124394713-89648b00-dcf8-11eb-929b-5e0d3bcc2793.JPG)
-![Tablet2](https://user-images.githubusercontent.com/64873698/124394714-89fd2180-dcf8-11eb-8239-8822bcc361c0.JPG)
+  <img src=
 
        width="350" title="Full Screen 2" alt="Full Screen Version 2">
 </p>
 
+ ![Mobile1](https://user-images.githubusercontent.com/64873698/124394742-aa2ce080-dcf8-11eb-8bda-912797076f91.JPG)
+![Tablet2](https://user-images.githubusercontent.com/64873698/124394745-ad27d100-dcf8-11eb-8eb9-a5c2232b679c.JPG)
+ 
 Tablet/Smaller Laptop
 <p align="center">
   <img src=

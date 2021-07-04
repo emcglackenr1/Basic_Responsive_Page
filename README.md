@@ -1,6 +1,6 @@
 <h1>Basic_Responsive_Page</h1>
 <h3>
-A demonstration of a responsive web page template built from scratch, using only CSS and HTML. 
+A demonstration of a responsive web page built from scratch, using only CSS and HTML. 
  </h3>
 
 <b>Available to view at: https://emcglackenr1.github.io/Basic_Responsive_Page/<b>

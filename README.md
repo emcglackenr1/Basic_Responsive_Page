@@ -10,7 +10,7 @@ A demonstration of a responsive web page template built from scratch, using only
 This is a demonstration of some of the fundamental features of a responsive web landing page. The design layout adapts to the screen size of the device in order to optimise user experience.
 It was created without the usage of templates, Bootstrap or Tailwind. 
 
-The design was created during pride months, so the colour scheme was inspired by a combination of LGBTQ+ Flags.
+The design was created during pride month, so the colour scheme was inspired by a combination of LGBTQ+ Flags.
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/64873698/124370146-f41bb500-dc6b-11eb-9c61-298172ba70e5.JPG" width="350" title="Colour Scheme" alt="Colour Scheme inspired by LGBTQ+ Flag">

@@ -94,7 +94,7 @@ border-style: outset;
 
 .container {
   display: grid;
-  grid-template-rows: 1fr 5fr 1fr;
+  grid-template-rows: 1fr 3fr .2fr;
   grid-template-columns: .8fr 5fr .8fr;
   grid-template-areas: 
     "header header header"
@@ -230,7 +230,7 @@ border-style: solid;
 @media screen and (max-width: 85rem) {
 .container {
   display: grid;
-  grid-template-rows: .8fr 5fr .8fr;
+  grid-template-rows: .8fr 5fr .2fr;
   grid-template-columns: .8fr 10fr .8fr;
   grid-template-areas: 
     "header header header"
@@ -272,8 +272,8 @@ padding-top, padding-bottom: 3%;
 @media screen and (max-width: 50rem) {
 .container {
     display: grid;
-    grid-template-rows: .8fr 5fr .8fr;
-    grid-template-columns: .8fr 10fr .8fr;
+    grid-template-rows: .8fr 5fr .2fr;
+    grid-template-columns: .8fr 10fr .2fr;
     grid-template-areas: 
       "header header header"
       "aside main aside1"

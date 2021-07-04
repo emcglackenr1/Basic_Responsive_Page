@@ -1,6 +1,9 @@
 /* Styling applying to 1024px and smaller, barring what is mentioned specifically in the responsive to 
 mobile screens section */
 
+html {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
 header {
   grid-area: header;
@@ -49,32 +52,37 @@ background: linear-gradient(90deg, rgba(194,167,179,0.4570027840237657) 0%, rgba
   background-color: none;
   width: 100%;
   height: fit-content;
-  border-style: solid;
-  border-color: black;
-  background-color: lightgray;
-  grid-area: header;
-  float: bottom;
+  margin-right: 5%;
+  border-left, border-right: 0;
+  border-top, border-bottom: 2px;
+  border-style: solid black;
+  background-color: black;
+  grid-area: nav;
   position: absolute;
-  
 }
 
 .navUL {
-  grid-area: header;
+  grid-area: nav;
   width: 100%;
   height: 100%;
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
+  background: black;
+  background: linear-gradient(110deg, rgba(255,255,255,1) 0%, rgba(255,255,253,0.4962184702982756) 0%, rgba(231,190,36,0.4429971817828694) 17%, rgba(214,63,68,0.4962184702982756) 34%, rgba(36,140,179,0.4710083862646621) 64%, rgba(29,47,113,0.4822128680573792) 97%);   
+ 
 }
 
 .nav-active {
 float: right;
 padding-right: 5%;
 padding-left: 3%;
+padding-top, padding-bottom: .8%;
 font-size: large;
 background:cadetblue;
-border-width: thin;
+background: linear-gradient(90deg, rgba(243, 191, 214, 0.457) 0%, rgba(199, 221, 245, 0.538) 100%); 
+border-width: medium;
 border-color: rgba(54,53,53,1);
 border-style: outset;
 }
@@ -82,22 +90,30 @@ border-style: outset;
 .nav-button {
 float: right;
 padding-right: 5%;
+padding-top: .05%;
 padding-left: 3%;
-font-size: large;
+font-size: medium;
+background: rgb(194,167,179);
+background: linear-gradient(90deg, rgba(194,167,179,0.4570027840237657) 0%, rgba(166,180,195,0.5382352770209646) 100%); 
+
 }
 
 .nav-button:hover {
 border-width: thin;
 border-color: rgba(54,53,53,1);
+border-width: medium;
+background: rgb(194,167,179);
+background: linear-gradient(90deg, rgba(214, 185, 198, 0.457) 0%, rgba(186, 202, 219, 0.538) 100%); 
 border-style: outset;
 }
 
 .container {
   display: grid;
-  grid-template-rows: 1fr 3fr .2fr;
+  grid-template-rows: .7fr .2fr 3fr .2fr;
   grid-template-columns: .8fr 5fr .8fr;
   grid-template-areas: 
     "header header header"
+    "nav nav nav"
     "aside main aside1"
     "footer footer footer";
   grid-gap: 0;
@@ -217,23 +233,31 @@ padding-right, padding-left: 0;
 
 footer
 {
-background: rgb(194,167,179);
-background: linear-gradient(90deg, rgba(194,167,179,0.4570027840237657) 0%, rgba(166,180,195,0.5382352770209646) 100%); 
 grid-area: footer;
 height: 100%;
 text-align: center;
-border-top: black;
-border-style: solid;
+background-color: none;
+background-color: radial-gradient(circle, rgba(101,98,98,1) 1%, rgba(54,53,53,1) 2%); 
 }
+
+.footerImg
+{
+  opacity: .5;
+}
+
+
+
+
 
 /* Responsive columns 85rem max */
 @media screen and (max-width: 85rem) {
 .container {
   display: grid;
-  grid-template-rows: .8fr 5fr .2fr;
+  grid-template-rows: .8fr .3fr 5fr .2fr;
   grid-template-columns: .8fr 10fr .8fr;
   grid-template-areas: 
     "header header header"
+    "nav nav nav"
     "aside main aside1"
     "footer footer footer";
   grid-gap: 0;
@@ -268,42 +292,22 @@ padding-top, padding-bottom: 3%;
 }
 
 
-/* Responsive columns 50rem max */
+/* Responsive columns 50rem max *//* Responsive columns 85rem max */
 @media screen and (max-width: 50rem) {
-.container {
+  .container {
     display: grid;
-    grid-template-rows: .8fr 5fr .2fr;
-    grid-template-columns: .8fr 10fr .2fr;
+    grid-template-rows: .3fr .2fr 5fr .2fr;
+    grid-template-columns: .8fr 10fr .8fr;
     grid-template-areas: 
       "header header header"
+      "nav nav nav"
       "aside main aside1"
       "footer footer footer";
     grid-gap: 0;
     height: 100%;
-}
-
-.headerImage img
-{
-  width: 100%;
-  overflow: hidden;
-  height: 800px;
-  display: block;
-  repeat: repeat;
-}
-
-.main
-    {
-    height: 100%;
-    background: rgb(5,8,19);
+  }
+  .row {
+    display: grid;
+    grid-template-columns: 1fr;
     }
-
-.row {
-  display: grid;
-  grid-template-columns: 1fr; 
-}
-
-.row2 {
-  display: grid;
-  padding-top, padding-bottom: 3%;
-}
 }

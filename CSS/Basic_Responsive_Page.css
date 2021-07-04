@@ -2,79 +2,134 @@
 mobile screens section */
 
 
-header{
+header {
     grid-area: header;
- text-align: center;
+    text-align: center;
     font-size: 120%;
     width: 100%;
     height: 100%;
 }
+
+
+body
+{    
+  background: rgb(5,8,19);
+}
+
 
 .headerImage
 {
   position: top;
   display: block;
   height: 40px;
+  grid-area: header;
 }
 
 .headerImage img
 {
   width: 100%;
+  overflow: hidden;
   height: auto;
   display: block;
 }
 
 .bannerH
 {
-left: 0;
-top: 0;
-width: 100%;
-
+background-color: rgba(255, 255, 255, 0.5);
+padding: 1%;
+position: relative;
 }
 
+.introBody {
+background: rgb(194,167,179);
+background: linear-gradient(90deg, rgba(194,167,179,0.4570027840237657) 0%, rgba(166,180,195,0.5382352770209646) 100%); 
+} 
 
+  .navmain {
+    background-color: none;
+    width: 100%;
+    height: fit-content;
+    border-style: solid;
+    border-color: black;
+    background-color: lightgray;
+    grid-area: header;
+    float: bottom;
+    position: absolute;
+    
+}
 
-  /*  background: rgb(194,167,179);
-  background: linear-gradient(90deg, rgba(194,167,179,0.4570027840237657) 0%, rgba(166,180,195,0.5382352770209646) 100%); 
-  Or
-  */
+.navUL {
+    grid-area: header;
+    width: 100%;
+    height: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.nav-active {
+  float: right;
+  padding-right: 5%;
+  padding-left: 3%;
+  font-size: large;
+  background:cadetblue;
+  border-width: thin;
+  border-color: rgba(54,53,53,1);
+  border-style: outset;
+}
+
+.nav-button {
+  float: right;
+  padding-right: 5%;
+  padding-left: 3%;
+  font-size: large;
+}
+
+.nav-button:hover {
+  border-width: thin;
+  border-color: rgba(54,53,53,1);
+  border-style: outset;
+}
 
 .container {
     display: grid;
     grid-template-rows: 1fr 5fr 1fr;
-    grid-template-columns: 1fr 10fr 1fr;
+    grid-template-columns: .8fr 5fr .8fr;
     grid-template-areas: 
       "header header header"
       "aside main aside1"
-      "aside footer aside1";
+      "footer footer footer";
     grid-gap: 0;
     height: 100%;
 }
 
-h1, h2, h3, h4 {
+main h1, h2, h3, h4 {
   text-align: center;
 }
 
 main {
     grid-area: main; 
-    background: rgb(63,94,251);
-    background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
-    height: 100%;
+    height: 100%;   
+    background: black;
+    background: linear-gradient(110deg, rgba(255,255,255,1) 0%, rgba(255,255,253,0.4962184702982756) 0%, rgba(231,190,36,0.4429971817828694) 17%, rgba(214,63,68,0.4962184702982756) 34%, rgba(36,140,179,0.4710083862646621) 64%, rgba(29,47,113,0.4822128680573792) 97%);   
+   
+}
+    /* Potential styling 
+    background: rgb(101,98,98);
+    background: radial-gradient(circle, rgba(101,98,98,1) 53%, rgba(54,53,53,1) 88%); */
+
+.cardSection {
+  background-color: black;
 }
 
 
-.headingbox {
+.cardbody {
     padding: 1% 1% 1% 5%;
     font-size: 100%;
     background:rgba(255,255,255,0.75);
+    box-shadow: 0 0 16px 8px  rgba(54,53,53,1)
 }
-
- /* Not currently in use:
-  .headingbox img
-  {
-  }
-
-  */
 
 
 .card {
@@ -85,11 +140,8 @@ main {
     height: fit-content;
     background: rgb(255,255,255);
     background: linear-gradient(110deg, rgba(255,255,255,1) 0%, rgba(255,255,253,0.4962184702982756) 0%, rgba(231,190,36,0.4429971817828694) 17%, rgba(214,63,68,0.4962184702982756) 34%, rgba(36,140,179,0.4710083862646621) 64%, rgba(29,47,113,0.4822128680573792) 97%);   
-    border-style: solid;
-    
-    border-color: rgb(101,98,98);
-    border-color: radial-gradient(circle, rgba(101,98,98,1) 53%, rgba(54,53,53,1) 88%); 
-  
+    border-style: solid;  
+    border-color: black;
   }
 
 
@@ -99,61 +151,56 @@ main {
   width: fit-content;
   padding: 5% 10%;
   text-align: center;
-  
-
 }
 
 .introCard {
-  border: .05px solid white;
-  border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px;
   border-collapse: collapse;
   height: fit-content;
   height: fit-content;
   padding: 5% 10%;
   text-align: center;
-  background: rgb(101,98,98);
-  background: radial-gradient(circle, rgba(101,98,98,0.5242296747800683) 53%, rgba(54,53,53,0.4485994226792279) 88%);
+  background: linear-gradient(110deg, rgba(255,255,255,1) 0%, rgba(255,255,253,0.840756285424326) 0%, rgba(226,206,133,0.8659663694579394) 17%, rgba(214,123,126,0.8603641285615808) 34%, rgba(111,165,185,0.840756285424326) 64%, rgba(69,77,110,0.8295518036316089) 97%);
 }
 
-
+.introCard p {
+  padding: 1%;
+}
 
 /* On hover add a deeper shadow */
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
+    border-style: solid;  
+    border-width: thick;
+    border-color: rgb(255,255,253,0.4962184702982756);
+    border-color: radial-gradient(circle, rgba(101,98,98,1) 53%, rgba(54,53,53,1) 88%); 
+  }
 
 
 
 .aside{  /* Created to centre the content viewpoint for the user */
     grid-area: aside;
-    background-image: url('./Resources/Skyline.jpeg');
-    background-repeat: no-repeat, repeat;
+    background: rgb(5,8,19);
 }
 
 .aside1{ /* Created to centre the content viewpoint for the user */
     grid-area: aside1;
-    background-color: 353535;
+    background: rgb(5,8,19);
 }
-
-footer{ /* Useful to have for layout, but also a client might want to utilise it, so best to have it there 
-  just in case */
-    grid-area: footer;
-    background-color: none;
-    height: 100%;
-}
-
 
 
 /* Float columns side by side */
 .column1 {
-  float: left;
-  padding: 2%;
+  float: center;
+  padding: 5%;
 }
+
 
 .row {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding: 3%;
+  grid-area: main;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 3%;  
+
 }
 
 /* float after the columns */
@@ -163,17 +210,24 @@ footer{ /* Useful to have for layout, but also a client might want to utilise it
 
 
 .row2 {
-  display: grid;
   padding-top, padding-bottom: 3%;
+  width: 100%;
+  padding-right, padding-left: 0;
 }
 
-/* float after the columns */
-.row2:after {
-  padding: 2%;
-}
+footer
+{
+  background: rgb(194,167,179);
+  background: linear-gradient(90deg, rgba(194,167,179,0.4570027840237657) 0%, rgba(166,180,195,0.5382352770209646) 100%); 
+  grid-area: footer;
+  height: 100%;
+  text-align: center;
+  border-top: black;
+  border-style: solid;
+  }
 
-/* Responsive columns 70rem max */
-@media screen and (max-width: 70rem) {
+/* Responsive columns 85rem max */
+@media screen and (max-width: 85rem) {
 .container {
     display: grid;
     grid-template-rows: .8fr 5fr .8fr;
@@ -181,72 +235,75 @@ footer{ /* Useful to have for layout, but also a client might want to utilise it
     grid-template-areas: 
       "header header header"
       "aside main aside1"
-      "aside footer aside1";
+      "footer footer footer";
     grid-gap: 0;
     height: 100%;
 }
+
+.headerImage img
+{
+  width: 100%;
+  overflow: hidden;
+  height: 800px;
+  display: block;
+}
+
 .main
     {
     height: 100%;
+    background: rgb(5,8,19);
     }
 
-}
 
 .row {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  
+}
+
+.row2 {
+  display: grid;
+  padding-top, padding-bottom: 3%;
+}
 }
 
 
 /* Responsive columns 50rem max */
 @media screen and (max-width: 50rem) {
-
-  header{
-    grid-area: header;
-    text-align: center;
-    font-size: 100%; /* This seemed sufficient for smaller screens, rather than the original 120% */
-}
-
-    .container {
+  .container {
       display: grid;
-      grid-template-rows: .1fr 2fr .1fr;
-      grid-template-columns: .1fr 1fr .1fr;
+      grid-template-rows: .8fr 5fr .8fr;
+      grid-template-columns: .8fr 10fr .8fr;
       grid-template-areas: 
         "header header header"
         "aside main aside1"
         "footer footer footer";
       grid-gap: 0;
+      height: 100%;
   }
-
-
+  
+  .headerImage img
+  {
+    width: 100%;
+    overflow: hidden;
+    height: 800px;
+    display: block;
+    repeat: repeat;
+  }
+  
+  .main
+      {
+      height: 100%;
+      background: rgb(5,8,19);
+      }
+  
   .row {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; 
   }
-
-  img { 
-    width: auto;
-    height: auto;
-    }
-
-    .cardbody {
-        border: .05px solid white;
-        border-radius: 5px 5px 0 0;
-        border-collapse: collapse;
-        width: 90%;
-        height: 90%;
-        padding: 5%;
-        text-align: center;
-      }
-
-      .introCard {
-        border: .05px solid white;
-        border-radius: 5px 5px 0 0;
-        border-collapse: collapse;
-        width: 90%;
-        height: 90%;
-        padding: 5%;
-        text-align: center;
-      }
-
-}
+  
+  .row2 {
+    display: grid;
+    padding-top, padding-bottom: 3%;
+  }
+  }

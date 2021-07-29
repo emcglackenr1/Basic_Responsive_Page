@@ -9,7 +9,7 @@ A demonstration of a responsive web page built from scratch, using only CSS and 
 
 This is a demonstration of some of the fundamental features of a responsive web landing page. The design layout adapts to the screen size of the device in order to optimise user experience.
 It was created without the usage of templates, Bootstrap or Tailwind. 
- 
+
  <h2> Colour Scheme: </h2>
 
 The design was created during pride month, so the colour scheme was inspired by a combination of LGBTQ+ Flags.

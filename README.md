@@ -1,19 +1,21 @@
 <h1>Basic_Responsive_Page</h1>
-<h3>
+<p align="center"><h3>
 A demonstration of a responsive web page built from scratch, using only CSS and HTML. 
  </h3>
 
 <b>Available to view at: https://emcglackenr1.github.io/Basic_Responsive_Page/<b>
 
 ![Desktop](https://user-images.githubusercontent.com/64873698/124370147-f4b44b80-dc6b-11eb-9729-149e123cdc9b.JPG)
+</p>
 
+<p align="center">
 This is a demonstration of some of the fundamental features of a responsive web landing page. The design layout adapts to the screen size of the device in order to optimise user experience.
 It was created without the usage of templates, Bootstrap or Tailwind. 
 
  <h2> Colour Scheme: </h2>
 
 The design was created during pride month, so the colour scheme was inspired by a combination of LGBTQ+ Flags.
- 
+</p>
 <p align="center">
   <img src="https://user-images.githubusercontent.com/64873698/124370146-f41bb500-dc6b-11eb-9c61-298172ba70e5.JPG" width="400"  alt="Colour Scheme">
 </p>
